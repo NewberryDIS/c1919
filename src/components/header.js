@@ -1,12 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
+import { Global, css } from "@emotion/core"
 import logo from '../images/c1919logo.png'
+import smogo from '../images/c1919logo-sm.png'
 
 const Headercss = styled.div`
+    overflow: hidden;
     width: 100%;
     background: rgb(214,232,242);
-    height: 57px;
+    height: 50px;
     position: sticky;
     top: 0;
     z-index: 10000;
@@ -15,14 +18,13 @@ const Headercss = styled.div`
         margin: auto;
         display: flex;
     }
-    .logo {
-        // flex-basis: 331px;
+    .logosm img, .logolg img {
+        height: 50px;
     }
     .headersection {
         text-align: center;
-        // flex: 1;
         line-height: 35px;
-        margin: 10px auto;
+        margin: 7px auto;
         a {
             width: 100%;
             display: block;
@@ -32,7 +34,7 @@ const Headercss = styled.div`
             position: relative;
             .linktext {
                 font-family: Oswald, "Century Gothic", sans-serif;
-                font-weight: 900;
+                font-weight: 600;
                 font-size: 22px;
                 color: rgba(117, 117, 117,1);
             }
@@ -46,12 +48,28 @@ const Headercss = styled.div`
             }
         }
     }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 1000px) {
         .hwrapper {
             width: 100%;
         }
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (min-width: 751px) {
+        .logolg {
+            display: block;
+        }
+        .logosm {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 750px) {
+        .logolg {
+            display: none;
+        }
+        .logosm {
+            display: block;
+        }
+    }
+    @media only screen and (max-width: 575px) {
         .headersection {
             display: none;
         }
@@ -61,9 +79,18 @@ const Headercss = styled.div`
 const Header = () => {
     return (
         <Headercss>
+            <Global
+                styles={css`
+                    html, body {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    `}
+                />
             <div className="hwrapper">
-                <div className="logo"><img src={logo} /></div>
-                <div className="headersection"><Link to={'/events'} ><span className="star">&#10038;</span><span className="linktext">events</span></Link></div>
+                <div className="logolg"><img src={logo} alt="Chicago 1919 logo" /></div>
+                <div className="logosm"><img src={smogo} alt="Chicago 1919 logo" /></div>
+                <div className="headersection"><Link to={'/events/'} ><span className="star">&#10038;</span><span className="linktext">events</span></Link></div>
                 <div className="headersection"><Link to={'/resources'} ><span className="star">&#10038;</span><span className="linktext">resources</span></Link></div>
                 <div className="headersection"><Link to={'/gallery'} ><span className="star">&#10038;</span><span className="linktext">gallery</span></Link></div>
                 <div className="headersection"><Link to={'/about'} ><span className="star">&#10038;</span><span className="linktext">about</span></Link></div>

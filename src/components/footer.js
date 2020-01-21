@@ -51,17 +51,16 @@ const Footercss = styled.div`
         margin: auto;
         img {
             margin: 15px;
-            max-height: 125px;
+            max-height: 75px;
         }
     }
 `
-
 const Footer = () => (
     <Footercss>
         <div className="sectionwrapper">
             <div>
-                <a href="https://www.neh.gov/" target="_blank">
-                    <img src={neh} className="neh" />
+                <a href="https://www.neh.gov/" target="_blank" rel="noopener noreferrer" >
+                    <img alt="National Endowment for the Arts logo" src={neh} className="neh" />
                 </a>
             </div>
             <div className="footertext" >
@@ -69,14 +68,14 @@ const Footer = () => (
                 <p>Any views, findings, conclusions, or recommendations expressed in these programs do not necessarily represent those of the National Endowment for the Humanities.</p>
             </div>
             <div >
-                <a href="https://www.newberry.org" target="_blank">
-                    <img src={newberry} className="newberry"/>
+                <a href="https://www.newberry.org" target="_blank" rel="noopener noreferrer" >
+                    <img alt="Newbery Library logo" src={newberry} className="newberry"/>
                 </a>
             </div>
             <div >
                 <p className="bold">Youth Engagement Sponsor:</p>
-                <a href="https://ourstory.allstate.com/withinsociety/engagingyouth/" target="_blank">
-                    <img src={allstate} className="allstate" />
+                <a href="https://ourstory.allstate.com/withinsociety/engagingyouth/" target="_blank" rel="noopener noreferrer" >
+                    <img alt="Allstate logo" src={allstate} className="allstate" />
                 </a>
             </div>
             <div >
@@ -88,83 +87,82 @@ const Footer = () => (
             <p>Chicago 1919 is being coordinated by the Newberry Library in partnership with:</p>
             <div className="sponsors">
                 
-                    <a href="https://www.blackchicagohistoryforum.org/" target="_blank">
-                        <img src={bchf} title="Black Chicago History Forum" />
+                    <a href="https://www.blackchicagohistoryforum.org/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="black chicago history forum logo" src={bchf} title="Black Chicago History Forum" />
                     </a>
                 
                 
-                    <a href="http://bmrc.lib.uchicago.edu/" target="_blank">
-                        <img src={bmrc} title="Black Metropolis Research Consortium" />
+                    <a href="http://bmrc.lib.uchicago.edu/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="Black Metropolis Research Consortium logo" src={bmrc} title="Black Metropolis Research Consortium" />
                     </a>
                 
                 
-                    <a href="https://experimentalstation.org/blackstone/" target="_blank">
-                        <img src={bbw} title="Blackstone Bicycle Works" />
+                    <a href="https://experimentalstation.org/blackstone/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="Blackstone Bicycle Works logo"  src={bbw} title="Blackstone Bicycle Works" />
                     </a>
                 
                 
-                    <a href="http://chicagoarchitecturalclub.org/" target="_blank">
-                        <img src={cac} title="Chicago Architectural Club" />
+                    <a href="http://chicagoarchitecturalclub.org/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="Chicago Architectural Club logo"  src={cac} title="Chicago Architectural Club" />
                     </a>
                 
                 
-                    <a href="https://chicagocollections.org/" target="_blank">
-                        <img src={cc} title="Chicago Collections Consortium" />
+                    <a href="https://chicagocollections.org/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="Chicago Collections Consortium logo"  src={cc} title="Chicago Collections Consortium" />
                     </a>
                 
                 
-                    <a href="https://www.chicagohistory.org/" target="_blank">
-                        <img src={chm} title="Chicago History Museum" />
+                    <a href="https://www.chicagohistory.org/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="Chicago History Museum logo"  src={chm} title="Chicago History Museum" />
                     </a>
                 
                 
-                    <a href="https://www.chipublib.org/" target="_blank">
-                        <img src={cpl} title="Chicago Public Library" />
+                    <a href="https://www.chipublib.org/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="Chicago Public Library logo"  src={cpl} title="Chicago Public Library" />
                     </a>
                 
                 
-                    <a href="https://www.thechicagourbanleague.org/" target="_blank">
-                        <img src={cul} title="Chicago Urban League" />
+                    <a href="https://www.thechicagourbanleague.org/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="Chicago Urban League logo"  src={cul} title="Chicago Urban League" />
                     </a>
                 
                 
-                    <a href="https://www.citybureau.org/" target="_blank">
-                        <img src={cb} title="City Bureau" />
+                    <a href="https://www.citybureau.org/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="City Bureau logo"  src={cb} title="City Bureau" />
                     </a>
                 
                 
-                    <a href="https://www.dusablemuseum.org/" target="_blank">
-                        <img src={dusable} />
+                    <a href="https://www.dusablemuseum.org/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="" src={dusable} />
                     </a>
                 
                 
-                    <a href="https://kartemquin.com/" target="_blank">
-                        <img src={kf} title="Kartemquin Films" />
+                    <a href="https://kartemquin.com/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="Kartemquin Films logo"  src={kf} title="Kartemquin Films" />
                     </a>
                 
                 
-                    <a href="http://ba1245.wixsite.com/middlepassage" target="_blank">
-                        <img src={mpp} title="Middle Passage Productions" />
+                    <a href="http://ba1245.wixsite.com/middlepassage" target="_blank" rel="noopener noreferrer" >
+                        <img alt="Middle Passage Productions logo"  src={mpp} title="Middle Passage Productions" />
                     </a>
                 
                 
-                    <a href="https://youngchicagoauthors.org/" target="_blank">
-                        <img src={yca} title="Young Chicago Authors" />
+                    <a href="https://youngchicagoauthors.org/" target="_blank" rel="noopener noreferrer" >
+                        <img alt="Young Chicago Authors logo"  src={yca} title="Young Chicago Authors" />
                     </a>
                 
             </div>
             <p>
-                Questions? Comments? Interested in volunteering? 
-                <a href="mailto:publicprograms@newberry.org" target="_blank">Contact us</a>
+                Questions? Comments? Interested in volunteering? <a href="mailto:publicprograms@newberry.org" target="_blank" rel="noopener noreferrer" >Contact us</a>
             </p>
             <hr />
             <p >
-                Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International license.</a>
+                Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" >Creative Commons Attribution 4.0 International license.</a>
             </p>
             <p>
                 <a href="https://creativecommons.org/licenses/by/4.0/" className="cc">
-                    <img src={person}  />
-                    <img src={a11ycc}  />
+                    <img alt="" src={person}  />
+                    <img alt="" src={a11ycc}  />
                 </a>
             </p>
         </div>

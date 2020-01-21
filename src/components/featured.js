@@ -79,8 +79,8 @@ const Featured = () => (
     <Featcss id="featured">
         <div className="featwrapper-vflex">
             <div className="featwrapper-hflex">
-                <a href="https://uchicago.maps.arcgis.com/apps/webappviewer/index.html?id=64e5689e591d465ea783d8730fef17d4" target="_blank">
-                    <img src={featimg} />
+                <a href="https://uchicago.maps.arcgis.com/apps/webappviewer/index.html?id=64e5689e591d465ea783d8730fef17d4" target="_blank" rel="noopener noreferrer">
+                    <img src={featimg} alt="Map of Chicago with icons overlaid and legend, a preview of the Mapping the 1919 Chicago Riot resource" />
                 </a>
                 <div className="feattext">
                     <h4>
@@ -95,7 +95,7 @@ const Featured = () => (
                         From July 27th to August 3rd, 1919, thousands of black and white Chicagoans fought each other in the streets, resulting in 38 deaths (23 African American and 15 white) and over 500 injuries (two-thirds of them African American). This interactive map shows how the riot was concentrated on the periphery of African American neighborhoods on Chicago’s South Side, as the city’s residential “color line” was both defended and created through inter-racial violence. 
                     </p>
                     <p>
-                        View <a href="https://uchicago.maps.arcgis.com/apps/webappviewer/index.html?id=64e5689e591d465ea783d8730fef17d4" target="_blank">Mapping the 1919 Chicago Riot</a>
+                        View <a href="https://uchicago.maps.arcgis.com/apps/webappviewer/index.html?id=64e5689e591d465ea783d8730fef17d4" target="_blank" rel="noopener noreferrer">Mapping the 1919 Chicago Riot</a>
                     </p>
                 </div>
             </div>

@@ -17,8 +17,8 @@ background-position: center;
     .jumbospacer, .jumbowrapper {
         flex: 1;
     }
-    .jumbowrapper {
-        width: 50%;
+    .mainarea {
+        width: 60%;
         margin: auto;
         text-align: center;
         text-shadow: 2px 2px 2px #020000;
@@ -53,16 +53,26 @@ background-position: center;
             max-width: 100px;
         }
     }
+    .jumbosection {
+        flex: 1;
+    }
     .caption {
-        position: absolute;
+        display: flex;
+        justify-content: flex-end;
         font-family: 'Special Elite', 'Cambria', serif;
-        bottom: 0;
         color: white;
-        right: 0;
         font-size: 0.9em;
-        max-width: 50%;
         text-align: right;
-        margin: 0 0.7% 0.7% 0;
+        padding: 40px 15px 15px 15px;
+        span {
+            width: 50%;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .mainarea {
+            width: 100%;
+        }
     }
 `
 
@@ -70,7 +80,7 @@ const Jumbotron = () => (
     <Jumbocss>
         <div className="jumbospacer"></div>
         <div className="jumbowrapper">
-            <div class="Header---textContainer---14uok">
+            <div className="jumbosection mainarea">
                 <h1>
                     Chicago 1919: Confronting the Race Riots
                 </h1>
@@ -81,7 +91,10 @@ const Jumbotron = () => (
                     Explore
                 </a>
             </div>
-            <span className="caption">During Chicago's 1919 Race Riots, African American veterans defended their communities from attacks by whites, while the state militia eventually quelled violence. Chicago Tribune Archives/TNS.</span>
+            <div className="jumbosection caption">
+
+            <span >During Chicago's 1919 Race Riots, African American veterans defended their communities from attacks by whites, while the state militia eventually quelled violence. Chicago Tribune Archives/TNS.</span>
+            </div>
         </div>
     </Jumbocss>
 )

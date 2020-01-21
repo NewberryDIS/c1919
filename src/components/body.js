@@ -1,11 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "@emotion/styled"
-import logo from '../images/c1919logo.png'
 import Jumbotron from './jumbotron'
 import About from './about'
 import Events from './events'
-import Featured from './featured'
+import Featured from './feature'
 import Twittersection from './twittersection'
 import Footer from './footer'
 
