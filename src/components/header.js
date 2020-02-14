@@ -88,8 +88,8 @@ const Header = () => {
                     `}
                 />
             <div className="hwrapper">
-                <div className="logolg"><img src={logo} alt="Chicago 1919 logo" /></div>
-                <div className="logosm"><img src={smogo} alt="Chicago 1919 logo" /></div>
+                <div className="logolg"><Link to="/"><img src={logo} alt="Chicago 1919 logo" /></Link></div>
+                <div className="logosm"><Link to="/"><img src={smogo} alt="Chicago 1919 logo" /></Link></div>
                 <div className="headersection"><Link to={'/events/'} ><span className="star">&#10038;</span><span className="linktext">events</span></Link></div>
                 <div className="headersection"><Link to={'/resources'} ><span className="star">&#10038;</span><span className="linktext">resources</span></Link></div>
                 <div className="headersection"><Link to={'/gallery'} ><span className="star">&#10038;</span><span className="linktext">gallery</span></Link></div>
