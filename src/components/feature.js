@@ -4,12 +4,14 @@ import Button from './button'
 import featimg from '../images/featimg.png'
 
 const Eventscss = styled.div`
-   
+background: rgb(214,232,242);
+
+padding-top: 50px;
+height: 100%;
+width: 100%;
+.featurewrapper {
     margin: auto;
-    margin-top: 50px;
-    height: 100%;
-    width: 75%;
-    .eventswrapper {
+        width: 75%;
         display: flex;
         flex-direction: column;
     .textimg {
@@ -21,7 +23,7 @@ const Eventscss = styled.div`
             margin: 0 3vw;
             border: 1px solid black;
         }
-        .eventstext {
+        .featuretext {
             padding: 10px;
             margin: 0 3vw;
             font-size: 1.5rem;
@@ -53,11 +55,11 @@ p{
 `
 
 const Events = () => (
-    <Eventscss id="events">
-        <div className="eventswrapper">
+    <Eventscss id="featuredresource">
+        <div className="featurewrapper">
             <div className="textimg">
                 <img src={featimg} alt="" />
-                <div className="eventstext">
+                <div className="featuretext">
                     <h4>
                         Highlighted Digital Resource
                     </h4>
@@ -75,7 +77,7 @@ const Events = () => (
                 </div>
             </div>
             <span className="bottombutton">
-                <Button link='events' text='view all events' />
+                <Button link='resources' text='view all resources' />
             </span>
         </div>
     </Eventscss>

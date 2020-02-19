@@ -36,7 +36,7 @@ background-position: center;
             font-weight: 400;
             font-size: 2.5rem;
         }
-        a{
+        #explore{
             color: white;
             display: block;
             margin: auto;
@@ -51,6 +51,14 @@ background-position: center;
             text-decoration: none;
             font-family: 'Oswald', 'Century Gothic', sans-serif;
             max-width: 100px;
+        }
+        #awardlink {
+            color: rgba(255,255,255,1);
+            transition: color 0.1s;
+            text-decoration: none;
+            &:hover {
+                color: rgba(255,255,255,0.85);
+            }
         }
     }
     .jumbosection {
@@ -81,13 +89,16 @@ const Jumbotron = () => (
         <div className="jumbospacer"></div>
         <div className="jumbowrapper">
             <div className="jumbosection mainarea">
+                <h2>
+                    Winner of the<br /><a href="https://ncph.org/news/congratulations-2020-award-winners/" id="awardlink" target="_blank" rel="noopener noreferrer" >2020 Outstanding Public History Project Award</a>
+                </h2>
                 <h1>
                     Chicago 1919: Confronting the Race Riots
                 </h1>
                 <h2>
                     A Series of Community Conversations
                 </h2>
-                <a href="#about">
+                <a href="#about" id="explore">
                     Explore
                 </a>
             </div>

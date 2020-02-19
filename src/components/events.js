@@ -4,7 +4,7 @@ import Button from './button'
 import eventsimg from '../images/eventsimg.png'
 
 const Eventscss = styled.div`
-   
+
     margin: auto;
     margin-top: 50px;
     height: 100%;
