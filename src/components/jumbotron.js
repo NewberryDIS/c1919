@@ -89,15 +89,18 @@ const Jumbotron = () => (
         <div className="jumbospacer"></div>
         <div className="jumbowrapper">
             <div className="jumbosection mainarea">
-                <h2>
-                    Winner of the<br /><a href="https://ncph.org/news/congratulations-2020-award-winners/" id="awardlink" target="_blank" rel="noopener noreferrer" >2020 Outstanding Public History Project Award</a>
-                </h2>
                 <h1>
                     Chicago 1919: Confronting the Race Riots
                 </h1>
                 <h2>
-                    A Series of Community Conversations
+                    Winner of the <a href="https://ncph.org/news/congratulations-2020-award-winners/" id="awardlink" target="_blank" rel="noopener noreferrer" >2020 Outstanding Public History Project Award</a>
                 </h2>
+                <h2>
+                <a href="https://ncph.org/" id="awardlink" target="_blank" rel="noopener noreferrer" >National Council on Public History</a>
+                </h2>
+                {/* <h2>
+                    A Series of Community Conversations
+                </h2> */}
                 <a href="#about" id="explore">
                     Explore
                 </a>
