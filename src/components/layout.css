@@ -12,6 +12,7 @@ body {
   background: rgb(239,246,250);
   margin: 0;
   padding: 0;
+  overflow: visible;
 }
 /* }
 article,

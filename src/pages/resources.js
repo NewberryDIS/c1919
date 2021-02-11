@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import Hat from "../components/hat"
 
 const Resourcescss = styled.div`
-overflow-x: hidden;
+// overflow-x: hidden;
 color: transparent;
 iframe {
         width: 100%;
@@ -22,10 +22,10 @@ const Resourcespage = () => {
     const wndw = typeof document !== `undefined` ? 'a' : null
     var jsLintSucks = wndw !== null ? document.body.style.overflow="hidden" : ''
     return (
-    <Resourcescss  scrolling="no" >
+    <Resourcescss >
         <Hat />
         <Header />
-        <iframe src="//publications.newberry.org/digital/chicago1919/resources/" title="Chicago 1919 resources" />
+        <iframe src="//scalar.usc.edu/works/chicago-1919/resources/" title="Chicago 1919 resources" />
     </Resourcescss>
 )}
 

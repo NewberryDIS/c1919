@@ -11,9 +11,14 @@ const Bodycss = styled.div`
     width: 100%; 
     display: flex;
     flex-direction: column;
+    overflow: visible;
+    overflow-x: visible;
 `
 
 const Body = () => {
+    const wndw = typeof document !== `undefined` ? 'a' : null
+    var jsLintSucks = wndw !== null ? document.body.style.overflow="visible" : ''
+
     return (
         <Bodycss>
             <Jumbotron />

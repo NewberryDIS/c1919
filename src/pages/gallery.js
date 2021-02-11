@@ -25,7 +25,7 @@ const Gallerypage = () => {
     <Gallerycss  scrolling="no" >
         <Hat />
         <Header />
-        <iframe src="//publications.newberry.org/digital/chicago1919/past-event-images" title="Chicago 1919 gallery" />
+        <iframe src="//scalar.usc.edu/works/chicago-1919/past-event-images" title="Chicago 1919 gallery" />
     </Gallerycss>
 )}
 

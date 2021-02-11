@@ -7,7 +7,7 @@ const IndexPage = () => (
     <div>
         <Hat />
         <Header />
-        <Body />
+        <Body scrolling="yes"/>
     </div>
 )
 

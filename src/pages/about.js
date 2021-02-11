@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import Hat from "../components/hat"
 
 const Aboutcss = styled.div`
-overflow-x: hidden;
+// overflow-x: hidden;
 color: transparent;
 iframe {
         width: 100%;
@@ -25,7 +25,7 @@ const Aboutpage = () => {
     <Aboutcss  scrolling="no" >
         <Hat />
         <Header />
-        <iframe src="//publications.newberry.org/digital/chicago1919/about" title="About the Chicago 1919 project" />
+        <iframe src="//scalar.usc.edu/works/chicago-1919/about" title="About the Chicago 1919 project" />
     </Aboutcss>
 )}
 

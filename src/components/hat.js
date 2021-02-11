@@ -10,6 +10,7 @@ const Hat = () => (
                 margin: 0;
                 padding: 0;
                 background: rgb(239,246,250);
+                overflow: visible;
             }
             `}
         />

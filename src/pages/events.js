@@ -25,7 +25,7 @@ const Eventspage = () => {
     <Eventscss  scrolling="no" >
         <Hat />
         <Header />
-        <iframe src="//publications.newberry.org/digital/chicago1919/events/" title="Chicago 1919 events" />
+        <iframe src="//scalar.usc.edu/works/chicago-1919/events/" title="Chicago 1919 events" />
     </Eventscss>
 )}
 
